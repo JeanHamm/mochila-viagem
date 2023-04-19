@@ -22,14 +22,18 @@ form.addEventListener('submit', function(event){
     //ele identifica dentro do form a caracteristica elements que tem um nome para cada item
     const nome = event.target.elements['nome'];
     const quantidade = event.target.elements['quantidade'];
-    nome.focus();
-
 
     //Criada uma array para conter o nome e quantidade
     const itemAtual = {
         'nome': nome.value,
         'quantidade': quantidade.value
     }
+    
+    nome.focus();
+
+
+
+    
 
     criaElemento(itemAtual) 
 
